@@ -5,7 +5,7 @@
 ![Status](https://img.shields.io/badge/status-stable-success.svg)
 ![Architecture](https://img.shields.io/badge/architecture-clean-orange.svg)
 
-**DataScope** is an enterprise-grade data analysis suite designed for the comprehensive study of railway station networks ("Les Gares"). Built with a strict **Clean Architecture**, it leverages advanced Machine Learning and Cybersecurity algorithms to transform raw operational data into actionable strategic insights.
+**DataScope** is an enterprise-grade data analysis suite designed for the comprehensive study of railway station networks. Built with a strict **Clean Architecture**, it leverages advanced Machine Learning and Cybersecurity algorithms to transform raw operational data into actionable strategic insights.
 
 ---
 
@@ -30,10 +30,10 @@ The project adheres to **Clean Architecture** principles to ensure modularity, t
 
 ```mermaid
 graph TD
-    UI[Presentation Layer (Tkinter)] --> Core[Core Logic & State]
-    Modules[Analysis Modules] --> Core
-    Core --> Data[Data Access Layer]
-    Data --> Ext[External Files (Excel)]
+    UI["Presentation Layer (Tkinter)"] --> Core["Core Logic & State"]
+    Modules["Analysis Modules"] --> Core
+    Core --> Data["Data Access Layer"]
+    Data --> Ext["External Files (Excel)"]
 ```
 
 - **`src/core/`**: Central nervous system handling application state and protocols.
@@ -73,11 +73,3 @@ python main.py
 
 The application will launch in full-screen mode. Select your dataset (standard templates provided in `data/`) to unlock analysis modules.
 
-## 🤝 Contributors
-
-**Yasser KHATTACH** - Lead Developer & Architect
-
-*Supervised by Dr. El Mkhalet Mouna*
-
----
-© 2025 DataScope Professional. All Rights Reserved.
